@@ -1,0 +1,10 @@
+Welcome to the dWeb! I'm beyond excited that you have made it this far and that you're ready to become the world's next dWeb developer. I was the world's first dWeb developer, one of the authors of this documentation and one of the dWeb's biggest advocates - so I apologize if any of you find my comments within this documentation to be bias - because I'm more than bias.
+
+The dWeb is in its infancy, we are still actively expanding its core components and adding new tools where necessary - so we apologize for any ALPHA bugs you may find or any other major issues you come up on in your journey. We assure you - we're working on it. Even if you find some crappy code or something that's incomplete, I can promise you that it's probably on our massive list of updates that we're hammering out on a daily basis. Nevertheless, feel free to let us know about it in the [PeepsLabs Telegram](https://t.me/peepslabs). We're always looking for bugs :).
+
+The dWeb is an amazing project, one that was not only born in a federal prison during a very political period in American history, but is also a major advancement in how we distribute, view and use websites, as well as web applications. What is even more exciting is the fact that this is just the tip of the iceberg when it comes to what can be done with dWeb's many protocols. Becoming a dWeb developer is fun, it's liberating and gives developers like yourself a new mission of bringing freedom back to the Internet where it rightfully belongs. I can't tell you how happy I am that you're joining the dWeb revolution with the rest of us. We have so much to do and so much to build. So what are you waiting on? Onward through the smog patriot! We'll all be there waiting on you.
+
+## What's Next?
+Learn how to install dWeb's many developer utilities.
+
+[Click here to continue](getting-started.md)

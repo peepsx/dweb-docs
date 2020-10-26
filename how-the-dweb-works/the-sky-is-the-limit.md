@@ -1,0 +1,18 @@
+# The Sky Is The Limit... Or Maybe The Universe
+So if the dWeb is a network of distributed and discoverable logs that can be instantaneously streamed between peers, certainly we could use this for far more than a distributed file system like dDrive or a distributed web like dWeb. You're absolutely correct, it that's your thought process. I'd like to showcase a few examples of different systems that we're working on at Peeps Labs, to hopefully motivate you to create your own distributed systems.
+
+## Decentralized Phone System
+If two or more peers can exchange data, they can have a phone call. We use the ARISEN blockchain's ability to create `Human Readable Names` in order to create phone numbers, in the same way that we use it to create decentralized top-level domains for dWeb's dDNS system. Our phone system uses a `Root Phone System` of its own, where numbers (accounts) are connected to a `peerID`. This `peerID` can be looked up on dWeb's DHT and it will return the peer connection details associated with the peerID (key) that is stored on the DHT itself.
+
+A peer can then send a `ring` message which rings the user's phone. Upon another peer answering the ring, a `channel` is opened between both peers. As one peer speaks, that audio is converted to a digital signal, stored in a dDatabase as binary and sent to the other peer for conversion. The same process takes place for the other peer as they speak. Since we can download a range of data by index, dPhone stores the `lastIndex` after each data fetch, so that only the newest data is downloaded from the other peer every 100ms. Since all dDatabases involved in the call are only exchanged between the peers on the call itself, the dDatabase is only available to those peers and therefore is not discoverable on the dWeb's DHT. This is because none of these dDatabases were announced over the DHT - they were privately exchanged instead, since both peers located each other via the `Root Phone System` instead of finding peers through a dDatabase lookup (the typical discovery process). The dDatabases are also encrypted by as private key that all peers exchange at the beginning of their phone call. 
+
+## Distributed Search Engine
+dWeb's DHT as you have probably already figured out, can store much more than just dWeb keys and peer-related data in its key-value store. dWeb's DHT like a dDatabase is format agnostic when it comes to the value-based data it can store. A new search engine we're developing known as [dSearch](https://peepsx.com/dsearch) utilizes the DHT to store anonymous analytics related to search terms, discovery keys of dDrives, as well as factors like relational scores and code quality to rank dDrives for a particular search term. This way search rank is determined by users, rather than the search engine itself. We're developing a distributed spider that will soon be built into dBrowser, which populates the DHT with search-related data. Other algorithms operate within the dSearch application that can associate a domain with a dWeb key (via a dDNS Root System lookup) amongst many other things.
+
+## Having Trouble?
+If you're having trouble, please join our [Peeps Labs Telegram](https://t.me/peepslabs) and our community of developers can help you figure things out!
+
+## What's Next?
+Learn more about `Human-Readable Account Names` and `User-Authentication` via the ARISEN blockchain.
+
+[Click here to continue](../user-authentication/index.md)
